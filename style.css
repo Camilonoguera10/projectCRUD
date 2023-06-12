@@ -84,3 +84,24 @@
     width: 2rem;
     height: 2rem;
 }
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.text_principal{
+    text-align: center;
+}
+
+.menu{
+    border: 3px lightgray solid;
+    background-color: whitesmoke;
+    margin-top: 2rem;
+    border-radius: 5rem;
+    height: 5.5rem;
+    width: 300px;
+}
+

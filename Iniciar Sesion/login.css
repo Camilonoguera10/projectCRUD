@@ -2,11 +2,23 @@ body {
     background-color: whitesmoke;
 }
 
-.subtitulo{
-
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
 }
-.login {
-    border: 3px red solid;
-    border-radius: 1rem;
-    width: 30rem;
+
+h1{
+    font-weight: lighter;
+}
+
+.subtitulo{
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.btn_login{
+    margin-top: 1rem;
+    gap: 1rem;
 }

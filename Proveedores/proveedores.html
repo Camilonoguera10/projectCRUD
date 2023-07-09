@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./proveedores.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <title>PROVEEDORES</title>
+</head>
+<body>
+
+    <section class="master">
+        <div class="background_header">
+            <p class="text_header_uno">20% DESCUENTO con CÓDIGO PROMOCIONAL: BIXDAY10</p> 
+            <p class="text_header_dos">ENVÍO GRATIS en pedidos SUPERIORES A $50 USD.</p>
+            <p class="text_header_tres">COMPRA AHORA!</p>
+        </div>
+
+        <div class="d-flex flex-row-reverse bd-highlight">
+            <div class="dropdown telefono">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                +57 3193619557
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <img src="../Assets/Index/Header/PC.png" width="400" height="100" alt="">
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+
+            <a id="dropdownMenuButton1" class="btn btn-primary"  href="#" role="button">admin@bixday.com</a>
+        </div>
+        </div>
+
+        <div class="barra_buscador">
+            <nav class="navbar navbar-light">
+                <div class="d-flex .justify-content-between container">
+                  <a class="navbar-brand logo_bixday" href="../index.html">
+                    <img src="../Assets/Header/Logo_Bixday.png" alt="">
+                  </a>
+
+                  <div class="mb-2 buscador">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Busca productos, códigos y más">
+                </div>
+                
+                <div class="d-flex flex-row-reverse bd-highlight barra">
+                    <a class="navbar-brand" href="./index.html">
+                      <img src="../Assets/Header/Login.png" alt="" width="70" height="70">
+                    </a>
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="../Assets/Header/SHopping_Bag.png" alt="" width="70" height="70">
+                      </a>
+                      <a class="navbar-brand" href="./index.html">
+                        <img src="../Assets/Header/Favoritos.png" alt="" width="70" height="70">
+                      </a>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <div class="container">
+        <h1>Proveedores</h1>
+        <p class="text_principal">¡Gracias por elegir nuestra aplicación CRUD! Esperamos que disfrutes de todas las ventajas que ofrece y que te ayude a optimizar la gestión de tus datos. ¡Comienza a crear, leer, actualizar y eliminar con facilidad y eficiencia!</p>
+    </div>
+    
+    <section class="container menu">
+        <ul class="nav justify-content-around">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../Assets/Body/hogar.png" alt="" width="70" height="70">
+          </a>
+            <a class="navbar-brand" href="../Clientes/clientes.html">
+              <img src="../Assets/Header/Agregar Cliente.png" alt="" width="70" height="70">
+            </a>
+            <a class="navbar-brand" href="../Productos/productos.html">
+              <img src="../Assets/Header/Agregar Productos.png" alt="" width="70" height="70">
+            </a>
+            <a class="navbar-brand" href="./proveedores.html">
+              <img src="../Assets/Body/producto.png" alt="" width="70" height="70">
+            </a>
+          </ul>
+    </section>
+
+    <section class="container crud">
+        <form>
+            <div class="mb-3">
+              <label class="form-label">Empresa</label>
+              <input type="text" class="form-control" placeholder="Ingresar nombre del proveedor" id="input_nombre">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Telefono</label>
+              <input type="number" class="form-control" placeholder="Telefono" id="input_telefono">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Dirección</label>
+              <input type="text" class="form-control" placeholder="Ingresar dirección" id="input_nombre">
+            </div>
+              <div class="btn_formulario d-flex align-items-center justify-content-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary">Actualizar</button>
+              </div>
+
+            
+          </form>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="d-flex justify-content-between row">
+          <div class="col">
+            <div class="footer-info">
+              <div class="container-fluid footer_uno">
+                <button class="btn_logo"></button>
+                <p class="text_footer">"Transforma ideas en realidad, simplifica la gestión de datos con nuestro poderoso
+                  CRUD: Crear, Leer, Editar, Eliminar."</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="footer-info">
+              <h5>Soporte</h5>
+              <p>Facturación</p>
+              <p>Comunidad</p>
+              <p>Desarrolladores</p>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="footer-info">
+              <h5>Conéctate</h5>
+              <p>Dirección: Calle Principal 123, Bogotá</p>
+              <p>Teléfono: +123456789</p>
+              <p>Email: info@bixday.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+          <div class="row row-cols-auto">
+            <button class="btn_footer">Politica de privacidad</button>
+            <button class="btn_footer">Terminos y condiciones</button>
+            <button class="btn_footer">Privacidad</button>
+            <button class="btn_footer">Contáctenos</button>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center footer-bottom">
+          <p>Copyright &copy; 2023 BixDay. Todos los derechos reservados.</p>
+        </div>
+      </div>
+      </div>
+  
+    </footer>
+
+    <script src="./javascript.js"></script>
+</body>
+</html>

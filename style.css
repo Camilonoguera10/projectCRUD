@@ -105,3 +105,35 @@ h1{
     width: 300px;
 }
 
+.portada img{
+    margin-top: 1rem;
+}
+
+.text_instrucciones{
+    margin-top: 1rem;
+}
+
+.footer{
+    background-color: whitesmoke;
+}
+
+.footer-info{
+    margin-top: 1rem;
+}
+
+.btn_footer{
+    background-color: transparent;
+    border: transparent 2px solid;
+}
+
+.btn_logo{
+    
+    width: 3rem;
+    height: 3rem;
+    background-image: url(../Assets/Header/Logo_Bixday.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: transparent;
+    
+}

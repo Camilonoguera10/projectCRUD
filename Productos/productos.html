@@ -95,31 +95,47 @@
     </ul>
   </section>
 
-  <section class="container crud">
+  <div class="container crud">
     <form>
       <div class="mb-3">
-        <label class="form-label">Ingresar SKU</label>
-        <input type="text" class="form-control" placeholder="Ingresar código SKU" id="input_sku">
+        <label class="form-label">Producto</label>
+        <input type="text" class="form-control" placeholder="Ingresar nombre del producto" id="inputProducto">
       </div>
       <div class="mb-3">
-        <label class="form-label">Producto</label>
-        <input type="text" class="form-control" placeholder="Ingresa nombre del producto" id="input_producto">
+        <label class="form-label">Codigo SKU</label>
+        <input type="text" class="form-control" placeholder="Ingresar Codigo SKU" id="inputSku">
       </div>
       <div class="mb-3">
         <label class="form-label">Cantidad</label>
-        <input type="number" class="form-control" placeholder="Ingresa cantidad disponible" id="input_cantidad">
+        <input type="number" class="form-control" placeholder="Ingresar cantidad de productos" id="inputCantidad">
       </div>
       <div class="mb-3">
         <label class="form-label">Precio</label>
-        <input type="number" class="form-control" placeholder="Ingresa el precio del producto" id="input_precio">
+        <input type="number" class="form-control" placeholder="Ingresar precio de venta" id="inputPrecio">
       </div>
       <div class="btn_formulario d-flex align-items-center justify-content-center">
-        <button type="submit" class="btn btn-primary">Enviar</button>
-        <button type="submit" class="btn btn-primary">Actualizar</button>
+        <button type="submit" class="btn btn-primary" id="btn_guardar" onclick="addData()">Guardar</button>
+        <button type="submit" class="btn btn-primary" id="btn_actualizar">Actualizar</button>
       </div>
-
     </form>
-  </section>
+  </div>
+
+  <hr>
+
+  <table class="container table table-bordered" id="tableData">
+    <thead>
+      <tr>
+        <th scope="col">Producto</th>
+        <th scope="col">SKU</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
 
   <footer class="footer">
     <div class="container">
@@ -167,7 +183,7 @@
     </div>
 
   </footer>
-  <script src="./javascript.js"></script>
+  <script src="./productos.js"></script>
 </body>
 
 </html>

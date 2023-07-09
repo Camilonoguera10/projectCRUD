@@ -1,3 +1,7 @@
+/*En esta funcion vamos hacer la lectura de los datos por medio del DOM y 
+realizamos una validacion de los datos ingresados, en caso de no poseer los datos
+completos el sistema no nos dejara avanzar, y en casi de si tener los datos
+el sistema nos dejara crear la funcion de validacion y avanzar*/
 function validarFormulario() {
     let nombre = document.getElementById('inputNombre').value;
     let email = document.getElementById('inputEmail').value;
@@ -27,6 +31,7 @@ function validarFormulario() {
     return true;
 }
 
+//Esta funcion es diseñada para la lectura de datos (READ)
 function lecturaDatos() {
 
     let listaCliente;
@@ -51,11 +56,13 @@ function lecturaDatos() {
 
     });
 
-    document.querySelector('#tableData').innerHTML = html;
+    document.querySelector('#tableData tbody').innerHTML = html;
 }
 
+//Crea el codigo
 document.onload = lecturaDatos();
 
+//Esta funcion es diseñada para anadir datos
 function addData() {
 
     if (validarFormulario() == true) {
@@ -63,12 +70,10 @@ function addData() {
         let email = document.getElementById('inputEmail').value;
         let telefono = document.getElementById('inputTelefono').value;
 
-        let listaCliente;
+        var listaCliente;
 
         if (localStorage.getItem('listaCliente') == null) {
-
             listaCliente = [];
-
         }
         else {
             listaCliente = JSON.parse(localStorage.getItem("listaCliente"));
@@ -93,7 +98,7 @@ function addData() {
 
 function eliminarDatos(index) {
 
-    let listaCliente;
+    var listaCliente;
 
     if (localStorage.getItem('listaCliente') == null) {
         listaCliente = [];
@@ -111,10 +116,10 @@ function eliminarDatos(index) {
 
 function actualizarDatos(index) {
 
-    document.getElementById('btn_guardar').style.display = 'none';
-    document.getElementById('btn_actualizar').style.display = 'block';
+    document.getElementById("btn_guardar").style.display = 'none';
+    document.getElementById("btn_actualizar", btn_guardar).style.display = 'block';
 
-    let listaCliente;
+    var listaCliente;
 
     if (localStorage.getItem('listaCliente') == null) {
         listaCliente = [];
@@ -127,9 +132,9 @@ function actualizarDatos(index) {
     document.getElementById('inputEmail').value = listaCliente[index].email;
     document.getElementById('inputTelefono').value = listaCliente[index].telefono;
 
-    document.querySelector('#btn_actualizar').onclick = function () {
+    document.querySelector("#btn_actualizar").onclick = function () {
 
-        if (validarFormulario == true) {
+        if (validarFormulario() == true) {
             listaCliente[index].nombre = document.getElementById('inputNombre').value;
             listaCliente[index].email = document.getElementById('inputEmail').value;
             listaCliente[index].telefono = document.getElementById('inputTelefono').value;

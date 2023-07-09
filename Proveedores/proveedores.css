@@ -1,0 +1,137 @@
+.header_uno{
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.background_header{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: black;
+    
+}
+
+.text_header_uno{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+.text_header_dos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+.text_header_tres{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 0.02rem;
+    margin-bottom: 0.8rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.dropdown-toggle{
+    width: 170px;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    
+}
+
+#dropdownMenuButton1{
+    background-color: transparent;
+    color: black;
+    border: transparent;
+}
+
+.btn-primary{
+    width: 170px;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.barra_buscador{
+    background-color: transparent;
+}
+
+.logo_bixday img{
+    width: 3rem;
+    height: 3rem;
+}
+.buscador{
+    width: 35rem;
+}
+
+.barra img{
+    display: flex;
+    align-items: stretch;
+    width: 2rem;
+    height: 2rem;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.text_principal{
+    text-align: center;
+}
+
+.menu{
+    border: 3px lightgreen solid;
+    background-color: lightyellow;
+    margin-top: 2rem;
+    border-radius: 5rem;
+    height: 5.5rem;
+    width: 300px;
+}
+
+.crud{
+    margin-top: 3rem;
+    border: 3px lightgreen solid;
+    background-color: lightyellow;
+    border-radius: 3rem;
+    height: 25rem;
+    padding: 2.5rem;
+}
+
+.footer{
+    background-color: whitesmoke;
+    margin-top: 2rem;
+}
+
+.btn_footer{
+    background-color: transparent;
+    border: transparent 2px solid;
+}
+
+.btn_logo{
+    
+    width: 3rem;
+    height: 3rem;
+    background-image: url(../Assets/Header/Logo_Bixday.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: transparent;
+    
+}

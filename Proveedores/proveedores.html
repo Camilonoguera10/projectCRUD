@@ -84,28 +84,42 @@
           </ul>
     </section>
 
-    <section class="container crud">
-        <form>
-            <div class="mb-3">
-              <label class="form-label">Empresa</label>
-              <input type="text" class="form-control" placeholder="Ingresar nombre del proveedor" id="input_nombre">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Telefono</label>
-              <input type="number" class="form-control" placeholder="Telefono" id="input_telefono">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Dirección</label>
-              <input type="text" class="form-control" placeholder="Ingresar dirección" id="input_nombre">
-            </div>
-              <div class="btn_formulario d-flex align-items-center justify-content-center">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-                <button type="submit" class="btn btn-primary">Actualizar</button>
-              </div>
-
-            
-          </form>
-    </section>
+    <div class="container crud">
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Proveedor</label>
+          <input type="text" class="form-control" placeholder="Ingresa nombre del proveedor" id="inputProveedor">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Direccion</label>
+          <input type="text" class="form-control" placeholder="Ingresa dirección" id="inputDireccion">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Ingresar Telefono</label>
+          <input type="number" class="form-control" placeholder="Ingresa numero telefono" id="inputTelefono">
+        </div>
+        <div class="btn_formulario d-flex align-items-center justify-content-center">
+          <button type="submit" class="btn btn-primary" id="btn_guardar" onclick="addData()">Guardar</button>
+          <button type="submit" class="btn btn-primary" id="btn_actualizar">Actualizar</button>
+        </div>
+      </form>
+    </div>
+  
+    <hr>
+  
+    <table class="container table table-bordered" id="tableData">
+      <thead>
+        <tr>
+          <th scope="col">Proveedor</th>
+          <th scope="col">Dirección</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+  
+      </tbody>
+    </table>
 
     <footer class="footer">
       <div class="container">
@@ -154,6 +168,6 @@
   
     </footer>
 
-    <script src="./javascript.js"></script>
+    <script src="./proveedores.js"></script>
 </body>
 </html>
